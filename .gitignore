@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-
+vue.config.js
+/src/firebase.js
 
 # local env files
 .env.local

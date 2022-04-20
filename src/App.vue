@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1> SimCompanies Price Chart</h1>
+  <DataChart chartName="Reinforced Concrete Price" imageURL="https://d1fxy698ilbz6u.cloudfront.net/static/images/resources/reinforced-concrete.png"/>
+  <!-- <DataChart chartName="Cement Price"/> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DataChart from './components/DataChart.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    DataChart
+  },
+
+  data() {
+			return {
+			};
+		},
+    
 }
 </script>
 
@@ -20,7 +28,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #041629;
+ margin: 35px auto;
+  padding-top: 20px;
+  padding-left: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+
+  box-shadow: 0 22px 35px -16px rgba(0, 0, 0, 0.692);
+
+
 }
+
 </style>
